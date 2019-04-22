@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>上传代码</title>
+    <link rel="stylesheet" href="/static/bootstrap-3.3.7/css/bootstrap.css">
+</head>
+<body>
+<form action="" method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <div class="form-group" style="margin-top: 40px;margin-left: 200px;">
+        <input type="file" name="file" id="exampleInputFile">
+    </div>
+    <button type="submit" class="btn btn-success" style="margin-left: 200px">提交</button>
+</form>
+</body>
+</html>
